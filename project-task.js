@@ -71,4 +71,39 @@ for (let i = 0; i < names.length; i++) {
    - Keep your code clean, readable, and easy to maintain
 */
 
-// ✅ Your refactored code goes below this line!
+// ✅ Refactored Code
+
+function welcomeUser(name) {
+    console.log("Welcome, " + name + "!");
+}
+
+function calculateSum(num1, num2) {
+    return num1 + num2;
+}
+
+function calculateProduct(num1, num2) {
+    return num1 * num2;
+}
+
+function printNames(nameList) {
+    console.log("Names in the list:");
+    for (let i = 0; i < nameList.length; i++) {
+        console.log(nameList[i]);
+    }
+}
+
+welcomeUser("Alice");
+welcomeUser("Bob");
+welcomeUser("Charlie");
+
+let refactoredNum1 = 5;
+let refactoredNum2 = 10;
+
+let refactoredSum = calculateSum(refactoredNum1, refactoredNum2);
+console.log("The sum of 5 and 10 is " + refactoredSum);
+
+let refactoredProduct = calculateProduct(refactoredNum1, refactoredNum2);
+console.log("The product of 5 and 10 is " + refactoredProduct);
+
+let refactoredNames = ["Alice", "Bob", "Charlie"];
+printNames(refactoredNames);
